@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "result-font";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+body {
+  background-color: hsl(221, 100%, 96%);
+  height: 97vh;
+  align-items: center;
+}
+body,
+.result-summery-container,
+.detail-summery-item,
+.detail-summery-item1,
+.detail-summery-item2,
+.detail-summery-item3,
+.detail-summery-item3 {
+  display: flex;
+}
+.result-summery-container,
+.result-container,
+.summery-container {
+  width: 50%;
+}
+.result-summery-container,
+.result-container,
+.continue {
+  border-radius: 30px;
+}
+.detail-summery-item,
+.detail-summery-item1,
+.detail-summery-item2,
+.detail-summery-item3 {
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+.item-reaction,
+.item-memory,
+.item-verbal,
+.item-visual {
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+.item-right,
+.continue,
+.item-visual,
+.item-verbal,
+.item-memory,
+.item-reaction,
+h2,
+h3 {
+  font-weight: 700;
+  font-family: result-font;
+}
+.result-summery-container {
+  background-color: hsl(0, 0%, 100%);
+  margin: 0px auto;
+  box-shadow: 8px 8px 20px 0px hsl(224deg 100% 86.15%);
+  text-align: center;
+}
+
+.result-container {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 31px 0px 0px 0px;
+}
+.circle-container {
+  height: 155px;
+  width: 155px;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  margin: 0px auto;
+  border-radius: 100px;
+}
+.circle-content {
+  padding: 40px;
+}
+h1 {
+  line-height: 1px;
+  color: hsl(0, 0%, 100%);
+  font-family: result-font;
+  font-weight: 800;
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+}
+p {
+  color: hsl(241, 100%, 89%);
+  font-family: result-font;
+  font-weight: 500;
+}
+.result-description {
+  padding: 0px 70px;
+  position: relative;
+  top: -10px;
+}
+.summery-title {
+  color: hsl(224, 30%, 27%);
+  text-align: start;
+}
+
+.summery-container2 {
+  margin: 40px;
+}
+.detail-summery-item {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.detail-summery-item1 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.detail-summery-item2 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.detail-summery-item3 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.detailed-summery {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 220px;
+  display: flex;
+}
+.item-reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.item-memory {
+  color: hsl(39, 100%, 56%);
+}
+.item-verbal {
+  color: hsl(166, 100%, 37%);
+}
+.item-visual {
+  color: hsl(234, 85%, 45%);
+}
+.continue {
+  width: 100%;
+  background-color: hsl(223.9deg 29.93% 26.86%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  position: relative;
+  top: 15px;
+  height: 50px;
+}
+
+.outof {
+  color: hsla(240, 1%, 42%, 0.474);
+}
+@media only screen and (max-width: 960px) {
+  .result-summery-container {
+    flex-direction: column;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .result-container {
+    border-radius: 0px 0px 30px 30px;
+    padding: 0px;
+  }
+  .summery-container,
+  .result-container,
+  .result-summery-container {
+    width: 100%;
+  }
+
+  .circle-content {
+    padding: 15px;
+  }
+
+  .result-description {
+    padding: 0px 25px;
+  }
+  body {
+    align-items: normal;
+    margin: 0px;
+    height: 100vh;
+  }
+  .circle-container {
+    height: 100px;
+    width: 100px;
+  }
+  h2 {
+    line-height: 10px;
+  }
+  .summery-container2 {
+    margin: 15px;
+  }
+}
